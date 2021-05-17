@@ -9,6 +9,10 @@ nav {
   grid-template-columns: 1fr 2fr 1fr;
   padding: 0 3%;
 
+  label,
+  #hamburger {
+    display: none;
+  }
   a {
     // border: 1px solid black;
     // width: 100%;
@@ -38,13 +42,41 @@ nav {
   .login {
     display: flex;
     justify-content: flex-end;
-    a {
-    }
   }
 
   @media screen and (max-width: 800px) {
+    display: flex;
     a {
       color: blue;
+    }
+    // .logo{
+    //     display:none;
+    // }
+    .login {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      color: brown;
+      // background: #a02620;
+      // font-style: normal;
+      font-size: 66px;
+      // width: 30px;
+      // height: 30px;
+      padding: 10px;
+    }
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #333;
+    }
+    #hamitems {
+      display: none;
+    }
+    input:checked ~ #hamitems {
+      display: block;
     }
   }
 }
