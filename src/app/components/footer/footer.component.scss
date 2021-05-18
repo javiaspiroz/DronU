@@ -1,0 +1,17 @@
+$azulFoot: rgb(19, 24, 41);
+footer {
+    background-color: $azulFoot;
+    color: white;
+    font-family: 'Lucida Console', Monospace;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+.mifooter {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
