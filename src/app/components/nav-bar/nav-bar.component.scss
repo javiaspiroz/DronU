@@ -1,0 +1,87 @@
+@import "../../../variables.scss";
+
+nav {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 3%;
+
+  label,
+  #hamburger {
+    display: none;
+  }
+  a {
+    font-size: 3rem;
+    color: $nav-text-color;
+    font-family: $font-chula;
+    padding: 0 2%;
+  }
+  .logo {
+    width: 7rem;
+    height: 7rem;
+  }
+  .cart {
+    width: 2.8rem;
+    height: 2.8rem;
+  }
+  .cartText {
+    display: none;
+  }
+  .itemVacio {
+    width: 10%;
+  }
+  .mainMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .itemVacioMovil {
+    display: none;
+  }
+  @media screen and (max-width: 800px) {
+    display: inline;
+    align-items: center;
+
+    label {
+      display: inline-block;
+      position: absolute;
+      right: 5%;
+      color: $nav-text-color;
+      font-size: 5rem;
+    }
+    #hamitems a {
+      box-sizing: border-box;
+      display: block;
+      text-align: center;
+      width: 100%;
+      // border-top: 1px solid #333;
+    }
+    #hamitems {
+      display: none;
+    }
+    input:checked ~ #hamitems {
+      display: block;
+    }
+    .cart {
+      display: none;
+    }
+    .logo {
+      width: 5rem;
+      height: 5rem;
+      margin: 6% 0 0 0;
+    }
+  }
+}
+.test2 {
+  position: sticky;
+  top: 300px;
+  height: 300px;
+  background-color: white;
+}
+.test {
+  height: 3000px;
+  background-color: #f5f5dc;
+}
