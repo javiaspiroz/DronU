@@ -42,8 +42,8 @@
 }
 
 .cajaNosotros{
-    margin-top: 30vh;
-    padding-bottom: 30vh;
+    margin-top: 20vh;
+    padding-bottom: 20vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -57,6 +57,16 @@
     text-align: center;
     align-items: center;
     padding-top: 5vh;
+    align-content: center;
+    a{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+    .gitLogo{
+        align-items: center;
+        margin-bottom: 5%;
+    }
 }
 
 .cardImg{
@@ -66,11 +76,11 @@
 }
 
 .centerCard{
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 .borderCard{
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -95,6 +105,6 @@
         margin-bottom: 2vh;
     }
     .cajaNosotros{
-        flex: wrap;
+        // flex: wrap;
     }
 }
