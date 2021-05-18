@@ -5,6 +5,7 @@
 
 .imgBgHome{
     background-image: url("../../../assets/images/pexels-philip-warp-6185887bn.jpg");
+    opacity: 1;
     background-color: #cccccc;
     // background-position: center; 
     background-size: 100vw;
@@ -38,16 +39,38 @@
 .arrowNosotros{
     text-align: center;
     margin-top: 10vh;
-    margin-bottom: 5vh;
 }
 
 .cajaNosotros{
+    margin-top: 30vh;
+    padding-bottom: 30vh;
     display: flex;
     justify-content: space-evenly;
 }
 
 .card{
-    width: 30vw;
+    width: 25vw;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 45px;
+    opacity: 1;
+    text-align: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+
+.cardImg{
+    border: 1px solid #707070;
+    opacity: 1;
+    width: 35%;
+}
+
+.centerCard{
+    margin-top: 10vh;
+}
+
+.borderCard{
+    margin-bottom: 10vh;
 }
 
 @media only screen and (max-width: 600px) {
@@ -61,14 +84,17 @@
         width: 80%;
         padding-right: 5vh;
         padding-left: 5vh;
-        padding-bottom: 8vh;
-        padding-top: 7vh;
+        padding-bottom: 4vh;
+        padding-top: 4vh;
         h2{
             margin-bottom: 3vh;
         }
     }
     .arrowNosotros{
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+    .cajaNosotros{
+        flex: wrap;
     }
 }
