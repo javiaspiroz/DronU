@@ -1,3 +1,5 @@
+@import "../../../variables.scss";
+
 nav {
   z-index: 2;
   position: absolute;
@@ -11,52 +13,51 @@ nav {
     display: none;
   }
   a {
-    // border: 1px solid black;
-    font-size: 32px;
-    color: brown;
+    font-size: 3rem;
+    color: $nav-text-color;
+    font-family: $font-chula;
     padding: 0 2%;
   }
   .logo {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
   .cart {
     width: 2.8rem;
     height: 2.8rem;
-    // margin: 0px 0px 0px 200px;
+  }
+  .cartText {
+    display: none;
+  }
+  .itemVacio {
+    width: 10%;
   }
   .mainMenu {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 5%;
   }
 
+  .itemVacioMovil {
+    display: none;
+  }
   @media screen and (max-width: 800px) {
     display: inline;
     align-items: center;
-    // .cart {
-    //   display: none;
-    // }
+
     label {
       display: inline-block;
-      color: brown;
-      // background: #a02620;
-      // font-style: normal;
-      font-size: 8rem;
-      // width: 30px;
-      // height: 30px;
-      padding: 10px;
-    }
-    #hamitems {
-      display: absolute;
-      top: 200px;
+      position: absolute;
+      right: 5%;
+      color: $nav-text-color;
+      font-size: 5rem;
     }
     #hamitems a {
       box-sizing: border-box;
       display: block;
+      text-align: center;
       width: 100%;
-      border-top: 1px solid #333;
+      // border-top: 1px solid #333;
     }
     #hamitems {
       display: none;
@@ -64,11 +65,19 @@ nav {
     input:checked ~ #hamitems {
       display: block;
     }
+    .cart {
+      display: none;
+    }
+    .logo {
+      width: 5rem;
+      height: 5rem;
+      margin: 6% 0 0 0;
+    }
   }
 }
 .test2 {
-  // position: sticky;
-  // top: 300px;
+  position: sticky;
+  top: 300px;
   height: 300px;
   background-color: white;
 }
