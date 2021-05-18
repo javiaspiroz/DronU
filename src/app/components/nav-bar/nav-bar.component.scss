@@ -1,12 +1,9 @@
 nav {
   z-index: 2;
   position: absolute;
-  // top: 50px;
   width: 100%;
-  display: grid;
-  // justify-content: space-between;
+  display: flex;
   align-items: center;
-  grid-template-columns: 1fr 2fr 1fr;
   padding: 0 3%;
 
   label,
@@ -15,56 +12,45 @@ nav {
   }
   a {
     // border: 1px solid black;
-    // width: 100%;
     font-size: 32px;
     color: brown;
+    padding: 0 2%;
   }
   .logo {
-    // padding: 0 10%;
-    a {
-      width: auto;
-      height: 100px;
-
-      img {
-        width: 100px;
-        height: 100px;
-      }
-    }
+    width: 8rem;
+    height: 8rem;
+  }
+  .cart {
+    width: 2.8rem;
+    height: 2.8rem;
+    // margin: 0px 0px 0px 200px;
   }
   .mainMenu {
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding: 0 5%;
-    a {
-      padding: 0 2%;
-    }
-  }
-  .login {
-    display: flex;
-    justify-content: flex-end;
   }
 
   @media screen and (max-width: 800px) {
-    display: flex;
-    a {
-      color: blue;
-    }
-    // .logo{
-    //     display:none;
+    display: inline;
+    align-items: center;
+    // .cart {
+    //   display: none;
     // }
-    .login {
-      display: none;
-    }
-
     label {
       display: inline-block;
       color: brown;
       // background: #a02620;
       // font-style: normal;
-      font-size: 66px;
+      font-size: 8rem;
       // width: 30px;
       // height: 30px;
       padding: 10px;
+    }
+    #hamitems {
+      display: absolute;
+      top: 200px;
     }
     #hamitems a {
       box-sizing: border-box;
