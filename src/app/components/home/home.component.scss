@@ -9,6 +9,7 @@
     // background-position: center; 
     background-size: 100vw;
     // background-repeat: no-repeat;
+    padding-top: 20vh;
 }
 
 #linkQuienesSomos{
@@ -17,7 +18,36 @@
 }
 
 .divQuienes{
-    padding-top: 20vh;
+    padding-top: 10vh;
+    background-color: white;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 108px;
+    opacity: 1;
+    text-align: center;
+    padding-bottom: 15vh;
+    padding-right: 20vh;
+    padding-left: 20vh;
+    width: 70vw;
+    h2{
+        margin-bottom: 8vh;
+    }
+    
+}
+
+.arrowNosotros{
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+.cajaNosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 30vw;
 }
 
 @media only screen and (max-width: 600px) {
@@ -26,5 +56,19 @@
     }
     h3{
         font-size: 1rem;
+    }
+    .divQuienes{
+        width: 80%;
+        padding-right: 5vh;
+        padding-left: 5vh;
+        padding-bottom: 8vh;
+        padding-top: 7vh;
+        h2{
+            margin-bottom: 3vh;
+        }
+    }
+    .arrowNosotros{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
     }
 }

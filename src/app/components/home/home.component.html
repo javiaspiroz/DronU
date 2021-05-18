@@ -2,7 +2,7 @@
     <ng-template ngbSlide *ngFor="let img of images; index as i">
       <div class="carousel-caption">
         <!-- <h3>My slide {{i + 1}} title</h3> -->
-        <a id="linkQuienesSomos" routerLink="" fragment="quienesSomos" rel="nofollow noopener noreferrer">
+        <a id="linkQuienesSomos" routerLink="" fragment="quienesSomos">
             <h3>Quiénes somos</h3>
             <svg id="icon_navigation_expand_more_24px" data-name="icon/navigation/expand_more_24px" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
                 <rect id="Boundary" width="32" height="32" fill="none"/>
@@ -18,7 +18,47 @@
 </ngb-carousel>
 
 <div class="imgBgHome">
-    <div id="quienesSomos" class="container divQuienes">
-        
+    <div class="container divQuienes">
+        <h2 id="quienesSomos">DronU</h2>
+        <p>Nuestra empresa nació de un proyecto universitario... "Sed ut perspiciatis 
+            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
+            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
+            aut odit aut fugit, sed quia"</p>
     </div>
+    <div class="arrowNosotros">
+        <a id="linkQuienesSomos" routerLink="" fragment="nosotros">
+            <h3>Nosotros</h3>
+            <svg id="icon_navigation_expand_more_24px" data-name="icon/navigation/expand_more_24px" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
+                <rect id="Boundary" width="32" height="32" fill="none"/>
+                <path id="_Color" data-name=" ↳Color" d="M28.24,0,16,12.2,3.76,0,0,3.755,16,19.733,32,3.755Z" transform="translate(6 8.6)" fill="#fff"/>
+            </svg>
+        </a>  
+      </div>
+      <div id="nosotros" class="cajaNosotros">
+        <div class="card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img_avatar1.png" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title">John Doe</h4>
+              <p class="card-text">Some example text.</p>
+              <a href="#" class="btn btn-primary">See Profile</a>
+            </div>
+          </div>
+      </div>
 </div>
