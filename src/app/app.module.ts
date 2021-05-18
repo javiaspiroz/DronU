@@ -13,6 +13,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { AlquilerComponent } from './components/alquiler/alquiler.component';
 import { VentaComponent } from './components/venta/venta.component';
+import { ImagenDronComponent } from './components/imagen-dron/imagen-dron.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { VentaComponent } from './components/venta/venta.component';
     ProductoComponent,
     PerfilComponent,
     AlquilerComponent,
-    VentaComponent
+    VentaComponent,
+    ImagenDronComponent
   ],
   imports: [
     BrowserModule,
