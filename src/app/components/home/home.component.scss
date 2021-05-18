@@ -6,9 +6,25 @@
 .imgBgHome{
     background-image: url("../../../assets/images/pexels-philip-warp-6185887bn.jpg");
     background-color: #cccccc;
+    // background-position: center; 
+    background-size: 100vw;
+    // background-repeat: no-repeat;
 }
 
 #linkQuienesSomos{
     text-decoration: none;
     color: white;
+}
+
+.divQuienes{
+    padding-top: 20vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .carouselImg{
+        height: 15rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
 }
