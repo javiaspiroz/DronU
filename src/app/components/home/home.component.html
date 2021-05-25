@@ -1,8 +1,7 @@
 <ngb-carousel #carousel [interval]="1000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
     <ng-template ngbSlide *ngFor="let img of images; index as i">
       <div class="carousel-caption">
-        <!-- <h3>My slide {{i + 1}} title</h3> -->
-        <a id="linkQuienesSomos" routerLink="" fragment="quienesSomos">
+        <a class="linkFlecha" routerLink="" fragment="quienesSomos">
             <h3>Quiénes somos</h3>
             <svg id="icon_navigation_expand_more_24px" data-name="icon/navigation/expand_more_24px" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
                 <rect id="Boundary" width="32" height="32" fill="none"/>
@@ -27,7 +26,7 @@
             aut odit aut fugit, sed quia"</p>
     </div>
     <div class="arrowNosotros">
-        <a id="linkQuienesSomos" routerLink="" fragment="nosotros">
+        <a class="linkFlecha" routerLink="" fragment="nosotros">
             <h3>Nosotros</h3>
             <svg id="icon_navigation_expand_more_24px" data-name="icon/navigation/expand_more_24px" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
                 <rect id="Boundary" width="32" height="32" fill="none"/>
