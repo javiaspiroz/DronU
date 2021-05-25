@@ -13,10 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
-  // images = [62, 83, 466, 965, 982, 1043, 738].map((n) => `https://picsum.photos/id/${n}/900/500`);
-  images = ["../../../assets/images/Drones1.jpg", "../../../assets/images/Drones2.jpg", 
-    "../../../assets/images/Drones3.jpg", "../../../assets/images/Drones4.png"]
+  images = ["../../../assets/images/Drones1.jpg", "../../../assets/images/iewek-gnos-ZlkRrzJl20Q-unsplash.jpg", 
+    "../../../assets/images/jaromir-kavan-e3hH6_pSk1g-unsplash.jpg", "../../../assets/images/Drones4.png"]
 
   paused = false;
   unpauseOnArrow = false;
