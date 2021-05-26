@@ -38,6 +38,7 @@ import { CarritoComponent } from './components/carrito/carrito.component';
     NgbModule,
     FormsModule,
     ReactiveFormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

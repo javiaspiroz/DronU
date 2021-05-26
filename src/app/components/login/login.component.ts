@@ -8,10 +8,17 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
+  // @Input() show: boolean;
+  user: string = '';
+  password: string = '';
+  respuesta: string = '';
+  // login: Login = new Login();
+  closeResult: string = '';
   @ViewChild('content') block: ElementRef;
   // @ViewChild(RegisterComponent) child: RegisterComponent; //hijo referenciado
-  closeResult: string = '';
+  // closeResult: string = '';
 
+  // @ViewChild('content') block: ElementRef;
   constructor(private modalService: NgbModal) {}
 
   ngOnInit(): void {}

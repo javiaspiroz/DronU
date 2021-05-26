@@ -5,24 +5,25 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { VentaComponent } from './components/venta/venta.component';
 import { AlquilerComponent } from './components/alquiler/alquiler.component';
-
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch:"full"},
-  { path: 'alquiler', component: AlquilerComponent, pathMatch:"full"},
-  { path: 'perfil', component: PerfilComponent, pathMatch:"full"},
-  { path: 'producto', component: ProductoComponent, pathMatch:"full"},
-  { path: 'venta', component: VentaComponent, pathMatch:"full"},
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'alquiler', component: AlquilerComponent, pathMatch: 'full' },
+  { path: 'perfil', component: PerfilComponent, pathMatch: 'full' },
+  { path: 'producto', component: ProductoComponent, pathMatch: 'full' },
+  { path: 'venta', component: VentaComponent, pathMatch: 'full' },
+  // { path: 'login', component: LoginComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(routes, {
-      onSameUrlNavigation: "ignore",
-      anchorScrolling:'enabled',
-      scrollPositionRestoration: 'enabled'
-    })
+      onSameUrlNavigation: 'ignore',
+      anchorScrolling: 'enabled',
+      scrollPositionRestoration: 'enabled',
+    }),
   ],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
