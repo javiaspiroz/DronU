@@ -5,7 +5,6 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { VentaComponent } from './components/venta/venta.component';
 import { AlquilerComponent } from './components/alquiler/alquiler.component';
-import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -13,7 +12,6 @@ const routes: Routes = [
   { path: 'perfil', component: PerfilComponent, pathMatch: 'full' },
   { path: 'producto', component: ProductoComponent, pathMatch: 'full' },
   { path: 'venta', component: VentaComponent, pathMatch: 'full' },
-  // { path: 'login', component: LoginComponent, pathMatch: 'full' },
 ];
 
 @NgModule({

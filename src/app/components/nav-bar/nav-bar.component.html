@@ -33,17 +33,18 @@
       [routerLinkActiveOptions]="{ exact: true }"
       >Eventos</a
     >
-    <!-- <div class="itemVacio"></div> -->
-    <!-- <a><img class="cart" src="../../../assets/images/cart.png" /></a> -->
-    <!-- <a href="#" class="cartText">Carrito</a> -->
+    <div class="itemVacio"></div>
+    <a (click)="showCarrito()"
+      ><img class="cart" src="../../../assets/images/cart.png"
+    /></a>
+    <a (click)="showCarrito()" class="cartText">Carrito</a>
     <a
       (click)="showLogin()"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
       >Login</a
     >
-    <!-- <a>Login</a> -->
   </div>
 </nav>
-<!-- <div class="test2"></div> -->
-<!-- <div class="test"></div> -->
+<app-login></app-login>
+<app-carrito></app-carrito>

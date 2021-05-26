@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
-// import { RegisterComponent } from 'src/app/components/register/register.component';
+import { RegisterComponent } from 'src/app/components/register/register.component';
 
 @Component({
   selector: 'app-login',
@@ -8,22 +8,22 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  // @Input() show: boolean;
-  user: string = '';
-  password: string = '';
-  respuesta: string = '';
-  // login: Login = new Login();
   closeResult: string = '';
   @ViewChild('content') block: ElementRef;
-  // @ViewChild(RegisterComponent) child: RegisterComponent; //hijo referenciado
-  // closeResult: string = '';
+  @ViewChild(RegisterComponent) child: RegisterComponent; //hijo referenciado
 
-  // @ViewChild('content') block: ElementRef;
-  constructor(private modalService: NgbModal) {}
+  constructor(
+    // private loginService: LoginService,
+    private modalService: NgbModal // private commonsService: CommonsService, // private authService: AuthService
+  ) {}
 
   ngOnInit(): void {}
 
-  showPopupLogin() {
+  showRegister() {
+    this.child.showPopupRegister();
+  }
+
+  public showPopupLogin() {
     this.modalService
       .open(this.block, { ariaLabelledBy: 'modal-basic-title' })
       .result.then(
