@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
@@ -14,6 +15,7 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { AlquilerComponent } from './components/alquiler/alquiler.component';
 import { VentaComponent } from './components/venta/venta.component';
 import { ImagenDronComponent } from './components/imagen-dron/imagen-dron.component';
+import { CarritoComponent } from './components/carrito/carrito.component';
 
 @NgModule({
   declarations: [
@@ -27,14 +29,18 @@ import { ImagenDronComponent } from './components/imagen-dron/imagen-dron.compon
     PerfilComponent,
     AlquilerComponent,
     VentaComponent,
-    ImagenDronComponent
+    ImagenDronComponent,
+    CarritoComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
