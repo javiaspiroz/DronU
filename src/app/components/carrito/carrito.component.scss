@@ -1,7 +1,35 @@
-.container {
-  border-radius: 250px;
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total {
+}
+.modal-footer {
+  justify-content: center;
 }
 button {
-  background-color: yellow;
-  // border-radius: 250px;
+  background-color: #ffd99a;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+  font-weight: bold;
+}
+.trash {
+  display: flex;
+  p {
+    margin: 0;
+    // align-items: center;
+    // justify-content: center;
+    // text-align: center;
+    // align-content: center;
+    padding-top: 15px;
+  }
+}
+img {
+  width: 3rem;
+  height: 3rem;
 }
