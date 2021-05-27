@@ -1,1 +1,13 @@
 <app-imagen-dron></app-imagen-dron>
+<div Class="container-fluid">
+    <div class="col-md-6 carousel-producto">
+        <ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+            <ng-template ngbSlide *ngFor="let img of images; index as i">
+            <div class="picsum-img-wrapper">
+                <img class="carouselImg"[src]="img" alt="Imagen de dron del carrusel">
+            </div>
+              
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div>
