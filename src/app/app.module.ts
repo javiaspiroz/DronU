@@ -17,6 +17,10 @@ import { VentaComponent } from './components/venta/venta.component';
 import { ImagenDronComponent } from './components/imagen-dron/imagen-dron.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
 
+import { SwiperModule } from 'swiper/angular';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +38,7 @@ import { CarritoComponent } from './components/carrito/carrito.component';
   ],
   imports: [
     BrowserModule,
+    SwiperModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
