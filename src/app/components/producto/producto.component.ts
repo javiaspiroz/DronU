@@ -13,7 +13,8 @@ export class ProductoComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  images = ["../../../assets/images/81U7zKn3htL._AC_SL1500_.jpg", "../../../assets/images/MAVIC-AIR-2-COMBO.png"]
+  images = ["../../../assets/images/81U7zKn3htL._AC_SL1500_.jpg", 
+    "../../../assets/images/HP3C2_CUT.jpg"]
 
   paused = false;
   unpauseOnArrow = false;
