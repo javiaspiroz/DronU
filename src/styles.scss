@@ -4,6 +4,7 @@
 @import "~bootstrap/scss/bootstrap";
 
 $nav-text-color: #707070;
+$amarillo-boton: #ffd99a;
 
 @font-face {
   font-family: "AgencyFB";
@@ -15,4 +16,11 @@ $font-chula: "AgencyFB";
 .modal-content {
   border-radius: 40px !important;
   margin-top: 12rem !important;
+}
+
+.button-chulo {
+  background-color: #ffd99a;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: bold;
 }

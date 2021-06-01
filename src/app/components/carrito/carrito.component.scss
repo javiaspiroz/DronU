@@ -1,3 +1,5 @@
+@import "../../../styles.scss";
+
 .modal-body {
   display: flex;
   align-items: center;
@@ -7,12 +9,6 @@
 }
 .modal-footer {
   justify-content: center;
-}
-button {
-  background-color: #ffd99a;
-  border-radius: 25px;
-  font-size: 20px;
-  font-weight: bold;
 }
 p {
   font-size: 16px;
@@ -32,4 +28,15 @@ p {
 img {
   width: 3rem;
   height: 3rem;
+}
+.modal-title {
+  text-align: center;
+  margin: auto;
+  color: grey;
+}
+
+.modal-header {
+  color: #fff;
+  // background-color: $azulOs;
+  // border-color: $azulOs;
 }
