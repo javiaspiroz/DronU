@@ -1,4 +1,4 @@
-<ngb-carousel #carousel [interval]="1000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+<ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
     <ng-template ngbSlide *ngFor="let img of images; index as i">
       <div class="carousel-caption">
         <a class="linkFlecha" routerLink="" fragment="quienesSomos">
@@ -67,10 +67,6 @@
                     <li>Certificado en IA</li>
                     <li>Experto en IUX</li>
                 </ul>
-              <!-- <p class="card-text">-Desarrollador Web 
-                  -Certificado en IA 
-                  -Experto en IUX</p>
-              <a href="#" class="btn btn-primary">See Profile</a> -->
             </div>
           </div>
           <div class="card borderCard">
