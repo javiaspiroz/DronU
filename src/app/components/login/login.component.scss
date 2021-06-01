@@ -29,17 +29,17 @@ $azul2: rgb(10, 18, 43);
 }
 
 .form-control {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .modal-title {
   text-align: center;
   margin: auto;
-  color: #fff;
+  color: grey;
 }
 
 .modal-header {
   color: #fff;
-  background-color: $azulOs;
-  border-color: $azulOs;
+  // background-color: $azulOs;
+  // border-color: $azulOs;
 }

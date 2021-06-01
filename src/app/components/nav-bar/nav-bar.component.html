@@ -34,11 +34,16 @@
       >Eventos</a
     >
     <div class="itemVacio"></div>
-    <a (click)="showCarrito()"
+    <a
+      (click)="showCarrito()"
+      routerLink=""
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
       ><img class="cart" src="../../../assets/images/cart.png"
     /></a>
     <a (click)="showCarrito()" class="cartText">Carrito</a>
     <a
+      routerLink=""
       (click)="showLogin()"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"

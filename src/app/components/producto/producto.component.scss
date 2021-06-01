@@ -1,0 +1,138 @@
+.cabProd{
+    margin-top: 2%;
+}
+
+.carouselImg{
+    height: 85vh;
+    border: 3px solid #707070;
+    border-radius: 65px;
+}
+
+.titulo{
+    font: normal normal bold 70px Segoe UI;
+    // text-align: left;
+}
+.marca{
+    font: italic normal 600 55px Segoe UI;
+    text-align: left;
+    padding-left: 3%;
+}
+
+.ratingTotal{
+    margin-top: 10%;
+    // text-align: right;
+}
+.star{
+    height: 3rem;
+}
+
+.iniStar{
+    margin-left: 11rem;
+}
+
+.tituloPrecio{
+    font: normal normal bold 55px Segoe UI;
+}
+
+.precioDiv{
+    margin-top: 5%;
+    text-align: left;
+    p{
+        text-align: right;
+        font: italic normal 600 55px Segoe UI;
+    }
+}
+
+.comprar{
+    background: #FFD99A 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 41px;
+    font: italic normal bold 45px Segoe UI;
+    // margin-left: 30%;
+    margin-top: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
+}
+.specs{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    h3{
+        font: italic normal 600 55px Segoe UI;
+    }
+    ul{
+        margin-top: 3%;
+    }
+}
+li{
+    text-align: justify;
+    font: italic normal 600 20px Segoe UI;
+    margin-bottom: 2%;
+}
+
+h5{
+    margin-top: 8%;
+    text-align: justify;
+    font: italic normal 600 20px Segoe UI;
+}
+
+.cardOpinion{
+    border: 1px solid #707070;
+    border-radius: 65px;
+}
+
+@media only screen and (max-width: 750px) {
+    .carouselImg{
+        height: 14rem;
+    }
+    .titulo{
+        font-size: 3rem;
+    }
+    .marca{
+        font-size: 2rem;
+        line-height: normal;
+    }
+    .comprar{
+        font-size: 1.5rem;
+    }
+    .specs{
+        margin-top: 5%;
+        h3{
+            font-size: 2rem;
+        }
+    }
+    li{
+        font-size: 1rem;
+    }
+    .carousel-producto{
+        align-content: center;
+    }
+    .star{
+        height: 2rem;
+    }
+    // .preMarca{
+    //     display: inline-flex !important;
+    // }
+    .ratingTotal{
+        margin-top: 3%;
+    }
+    // .iniStar{
+    //     margin-left: none;
+    // }
+    .precioDiv{
+        margin-top: 3%;
+        display: inline-flex !important;
+        p{
+            font-size: 2rem;
+            // text-align: right !important;
+        }
+        h4{
+            font-size: 2rem;
+            margin-right: 80%;
+        }
+    }
+    h5{
+        font-size: 1rem;
+    }
+
+}
