@@ -4,8 +4,9 @@
 
 .carouselImg{
     height: 85vh;
-    border: 3px solid #707070;
-    border-radius: 65px;
+    border-right: #707070;
+    /*border: 3px solid #707070;
+    border-radius: 65px;*/
 }
 
 .titulo{
@@ -70,15 +71,63 @@ li{
     margin-bottom: 2%;
 }
 
-h5{
+.descripcion{
     margin-top: 8%;
     text-align: justify;
     font: italic normal 600 20px Segoe UI;
 }
 
-.cardOpinion{
+.starOp{
+    height: 1.5rem;
+}
+
+.card-title{
+    font: italic normal 600 45px Segoe UI;
+}
+
+h6{
+    font: italic normal 600 15px Segoe UI;
+}
+
+.nomDate{
+    text-align: right;
+    margin-left: 8%;
+
+}
+
+.opUser{
+    font: italic normal 600 20px Segoe UI;
+}
+
+.textOp{
+    font: italic normal 600 15px Segoe UI;
+    text-align: justify;
+}
+
+.iniStarOp{
+    padding-left: 12px;
+}
+
+.card{
     border: 1px solid #707070;
     border-radius: 65px;
+    // width: 30%;
+    
+    margin-left: 3%;
+    margin-right: 3%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.iniCard{
+    margin-left: 8% !important;
+}
+
+.opiniones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
 }
 
 @media only screen and (max-width: 750px) {
@@ -110,21 +159,14 @@ h5{
     .star{
         height: 2rem;
     }
-    // .preMarca{
-    //     display: inline-flex !important;
-    // }
     .ratingTotal{
         margin-top: 3%;
     }
-    // .iniStar{
-    //     margin-left: none;
-    // }
     .precioDiv{
         margin-top: 3%;
         display: inline-flex !important;
         p{
             font-size: 2rem;
-            // text-align: right !important;
         }
         h4{
             font-size: 2rem;
@@ -133,6 +175,11 @@ h5{
     }
     h5{
         font-size: 1rem;
+    }
+
+    .card{
+        flex-wrap: wrap;
+        margin-top: 5%;
     }
 
 }
