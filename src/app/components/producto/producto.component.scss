@@ -30,6 +30,23 @@ hr{
     margin-top: 0px;
 }
 
+.rating{
+    // height: 90px;
+    width: 60%;
+    margin-left: 40%;
+    margin-top: -10%;
+    // display: none;
+}
+// .rowRating{
+//     text-align: right;
+//     align-items: ;
+// }
+
+.ratingOp{
+    // width: 80%;
+    height: 55%;
+}
+
 .ratingTotal{
     margin-top: 10%;
     // text-align: right;
@@ -108,7 +125,7 @@ h6{
 
 .nomDate{
     text-align: right;
-    margin-left: 8%;
+    // margin-left: 8%;
 
 }
 
@@ -121,9 +138,9 @@ h6{
     text-align: justify;
 }
 
-.iniStarOp{
-    padding-left: 12px;
-}
+// .iniStarOp{
+//     padding-left: 12px;
+// }
 
 .card{
     border: 1px solid #707070;
@@ -193,9 +210,15 @@ h6{
     h5{
         font-size: 1rem;
     }
+    .iniCard{
+        margin-left: 0% !important;
+        margin-right: 0%;
+    }
     .card{
         flex-wrap: wrap;
         margin-top: 5%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .descripcion{
         font-size: 1rem;
@@ -208,6 +231,7 @@ h6{
     }
     .nomDate{
         margin-left: 0%;
+        margin-top: -20%;
     }
     .card-title{
         font-size: 1.5rem;
