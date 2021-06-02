@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource, NgbAlert } from '@ng-bootstrap/ng-bootstrap';
+import {Subject} from 'rxjs';
+import {debounceTime} from 'rxjs/operators';
 
 @Component({
   selector: 'app-producto',
@@ -7,10 +9,17 @@ import { NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/n
   styleUrls: ['./producto.component.scss']
 })
 export class ProductoComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
+
+    this._success.subscribe(message => this.successMessage = message);
+    this._success.pipe(debounceTime(5000)).subscribe(() => {
+      if (this.selfClosingAlert) {
+        this.selfClosingAlert.close();
+      }
+    });
   }
 
   images = ["../../../assets/images/81U7zKn3htL._AC_SL1500_.jpg", 
@@ -23,6 +32,16 @@ export class ProductoComponent implements OnInit {
   pauseOnFocus = true;
 
   @ViewChild('carousel', {static : true}) carousel: NgbCarousel;
+  @ViewChild('selfClosingAlert', {static: false}) selfClosingAlert: NgbAlert;
+
+  staticAlertClosed = false;
+  successMessage = '';
+
+  private _success = new Subject<string>();
+
+  public changeSuccessMessage() { 
+    this._success.next(`${new Date()} - Message successfully changed.`); 
+  }
 
   togglePaused() {
     if (this.paused) {

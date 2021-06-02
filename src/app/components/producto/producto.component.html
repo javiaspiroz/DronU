@@ -31,7 +31,10 @@
             <h4 class="tituloPrecio">Precio</h4>
             <p>850€</p>
         </div>
-        <button class="comprar">Añadir al carrito</button>
+        <button class="comprar" (click)="changeSuccessMessage()">Añadir al carrito</button>
+        <ngb-alert #selfClosingAlert *ngIf="successMessage" type="success" 
+            (closed)="successMessage = ''">Producto añadido al carrito correctamente
+        </ngb-alert>
     </div>
 </div>
 
