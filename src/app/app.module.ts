@@ -18,6 +18,8 @@ import { ImagenDronComponent } from './components/imagen-dron/imagen-dron.compon
 import { CarritoComponent } from './components/carrito/carrito.component';
 
 import { SwiperModule } from 'swiper/angular';
+import { CursosComponent } from './components/cursos/cursos.component';
+import { EventosComponent } from './eventos/eventos.component';
 
 
 
@@ -35,6 +37,8 @@ import { SwiperModule } from 'swiper/angular';
     VentaComponent,
     ImagenDronComponent,
     CarritoComponent,
+    CursosComponent,
+    EventosComponent,
   ],
   imports: [
     BrowserModule,
