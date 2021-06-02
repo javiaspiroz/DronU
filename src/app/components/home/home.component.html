@@ -1,90 +1,147 @@
-<ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
-    <ng-template ngbSlide *ngFor="let img of images; index as i">
-      <div class="carousel-caption">
-        <a class="linkFlecha" routerLink="" fragment="quienesSomos">
-            <h3>Quiénes somos</h3>
-            <svg id="icon_navigation_expand_more_24px" data-name="icon/navigation/expand_more_24px" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
-                <rect id="Boundary" width="32" height="32" fill="none"/>
-                <path id="_Color" data-name=" ↳Color" d="M28.24,0,16,12.2,3.76,0,0,3.755,16,19.733,32,3.755Z" transform="translate(6 8.6)" fill="#fff"/>
-            </svg>
-        </a>  
-      </div>
-    <div class="picsum-img-wrapper">
-        <img class="carouselImg"[src]="img" alt="Imagen de dron del carrusel">
+<ngb-carousel
+  #carousel
+  [interval]="5000"
+  [pauseOnHover]="pauseOnHover"
+  [pauseOnFocus]="pauseOnFocus"
+  (slide)="onSlide($event)"
+>
+  <ng-template ngbSlide *ngFor="let img of images; index as i">
+    <div class="carousel-caption">
+      <a class="linkFlecha" routerLink="" fragment="quienesSomos">
+        <h3>Quiénes somos</h3>
+        <svg
+          id="icon_navigation_expand_more_24px"
+          data-name="icon/navigation/expand_more_24px"
+          xmlns="http://www.w3.org/2000/svg"
+          width="38"
+          height="32"
+          viewBox="0 0 38 32"
+        >
+          <rect id="Boundary" width="32" height="32" fill="none" />
+          <path
+            id="_Color"
+            data-name=" ↳Color"
+            d="M28.24,0,16,12.2,3.76,0,0,3.755,16,19.733,32,3.755Z"
+            transform="translate(6 8.6)"
+            fill="#fff"
+          />
+        </svg>
+      </a>
     </div>
-      
-    </ng-template>
+    <div class="picsum-img-wrapper">
+      <img class="carouselImg" [src]="img" alt="Imagen de dron del carrusel" />
+    </div>
+  </ng-template>
 </ngb-carousel>
 
 <div class="imgBgHome">
-    <div class="container divQuienes">
-        <h2 id="quienesSomos">DronU</h2>
-        <p>Nuestra empresa nació de un proyecto universitario... "Sed ut perspiciatis 
-            unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto 
-            beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur 
-            aut odit aut fugit, sed quia"</p>
+  <div class="container divQuienes">
+    <h2 id="quienesSomos">DronU</h2>
+    <p>
+      Nuestra empresa nació de un proyecto universitario... "Sed ut perspiciatis
+      unde omnis iste natus error sit voluptatem accusantium doloremque
+      laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis
+      et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+      voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia"
+    </p>
+  </div>
+  <div class="arrowNosotros">
+    <a class="linkFlecha" routerLink="" fragment="nosotros">
+      <h3>Nosotros</h3>
+      <svg
+        id="icon_navigation_expand_more_24px"
+        data-name="icon/navigation/expand_more_24px"
+        xmlns="http://www.w3.org/2000/svg"
+        width="38"
+        height="32"
+        viewBox="0 0 38 32"
+      >
+        <rect id="Boundary" width="32" height="32" fill="none" />
+        <path
+          id="_Color"
+          data-name=" ↳Color"
+          d="M28.24,0,16,12.2,3.76,0,0,3.755,16,19.733,32,3.755Z"
+          transform="translate(6 8.6)"
+          fill="#fff"
+        />
+      </svg>
+    </a>
+  </div>
+  <div id="nosotros" class="cajaNosotros">
+    <div class="card borderCard">
+      <img
+        class="cardImg rounded-circle"
+        src="https://avatars.githubusercontent.com/u/22559891?v=4"
+        alt="Card image"
+      />
+      <div class="card-body">
+        <h4 class="card-title">Juan Alberto Raya</h4>
+        <span>
+          <a href="https://github.com/Juanal07" target="_blank">
+            <img
+              class="gitLogo"
+              src="../../../assets/images/github_64px.png"
+              alt="Logo GitHub"
+            />
+            /Juanal07
+          </a>
+        </span>
+        <ul>
+          <li>-Desarrollador Web</li>
+          <li>Certificado en Seguridad Informática</li>
+          <li>Experto en IU</li>
+        </ul>
+      </div>
     </div>
-    <div class="arrowNosotros">
-        <a class="linkFlecha" routerLink="" fragment="nosotros">
-            <h3>Nosotros</h3>
-            <svg id="icon_navigation_expand_more_24px" data-name="icon/navigation/expand_more_24px" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
-                <rect id="Boundary" width="32" height="32" fill="none"/>
-                <path id="_Color" data-name=" ↳Color" d="M28.24,0,16,12.2,3.76,0,0,3.755,16,19.733,32,3.755Z" transform="translate(6 8.6)" fill="#fff"/>
-            </svg>
-        </a>  
+    <div class="card centerCard">
+      <img
+        class="cardImg rounded-circle"
+        src="../../../assets/images/javier-aspiroz.jpg"
+        alt="Card image"
+      />
+      <div class="card-body">
+        <h4 class="card-title">Javier Aspiroz</h4>
+        <span>
+          <a href="https://github.com/javiaspiroz" target="_blank">
+            <img
+              class="gitLogo"
+              src="../../../assets/images/github_64px.png"
+              alt="Logo GitHub"
+            />
+            /javiaspiroz
+          </a>
+        </span>
+        <ul>
+          <li>Desarrollador Web</li>
+          <li>Certificado en IA</li>
+          <li>Experto en IUX</li>
+        </ul>
+      </div>
     </div>
-    <div id="nosotros" class="cajaNosotros">
-        <div class="card borderCard">
-            <img class="cardImg rounded-circle" src="https://avatars.githubusercontent.com/u/22559891?v=4" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Juan Alberto Raya</h4>
-                <span>
-                    <a href="https://github.com/Juanal07" target="_blank">
-                        <img class="gitLogo" src="../../../assets/images/github_64px.png" alt="Logo GitHub">
-                        /Juanal07
-                    </a>
-                </span>
-                <ul>
-                    <li>-Desarrollador Web</li>
-                    <li>Certificado en Seguridad Informática</li>
-                    <li>Experto en IU</li>
-                </ul>
-            </div>
-        </div>
-        <div class="card centerCard">
-            <img class="cardImg rounded-circle" src="../../../assets/images/IMG_20170204_181151_869.jpg" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Javier Aspiroz</h4>
-                <span>
-                    <a href="https://github.com/javiaspiroz" target="_blank">
-                        <img class="gitLogo" src="../../../assets/images/github_64px.png" alt="Logo GitHub">
-                        /javiaspiroz
-                    </a>
-                </span>
-                <ul>
-                    <li>Desarrollador Web</li>
-                    <li>Certificado en IA</li>
-                    <li>Experto en IUX</li>
-                </ul>
-            </div>
-        </div>
-        <div class="card borderCard">
-            <img class="cardImg rounded-circle" src="https://avatars.githubusercontent.com/u/46591862?v=4" alt="Card image">
-            <div class="card-body">
-                <h4 class="card-title">Solange Roman</h4>
-                <span>
-                    <a href="https://github.com/solangeroman" target="_blank">
-                        <img class="gitLogo" src="../../../assets/images/github_64px.png" alt="Logo GitHub">
-                        /solangeroman
-                    </a>
-                </span>
-                <ul>
-                    <li>-Desarrollador Web</li>
-                    <li>Certificado en Design Thinking</li>
-                    <li>Experto en IUX</li>
-                </ul>
-            </div>
-        </div>
+    <div class="card borderCard">
+      <img
+        class="cardImg rounded-circle"
+        src="https://avatars.githubusercontent.com/u/46591862?v=4"
+        alt="Card image"
+      />
+      <div class="card-body">
+        <h4 class="card-title">Solange Roman</h4>
+        <span>
+          <a href="https://github.com/solangeroman" target="_blank">
+            <img
+              class="gitLogo"
+              src="../../../assets/images/github_64px.png"
+              alt="Logo GitHub"
+            />
+            /solangeroman
+          </a>
+        </span>
+        <ul>
+          <li>-Desarrollador Web</li>
+          <li>Certificado en Design Thinking</li>
+          <li>Experto en IUX</li>
+        </ul>
+      </div>
     </div>
+  </div>
 </div>
