@@ -21,10 +21,10 @@ $font-chula: "AgencyFB";
 }
 
 .button-chulo {
-  background-color: #ffd99a;
-  border-radius: 25px;
-  font-size: 20px;
-  font-weight: bold;
+  background: #ffd99a 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  border-radius: 41px;
+  font: italic normal bold 45px Segoe UI;
 }
 // Font Awesome
 @import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
