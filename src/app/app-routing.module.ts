@@ -8,7 +8,7 @@ import { AlquilerComponent } from './components/alquiler/alquiler.component';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { EventosComponent } from './eventos/eventos.component';
 
-
+import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -18,6 +18,7 @@ const routes: Routes = [
   { path: 'venta', component: VentaComponent, pathMatch: 'full' },
   { path: 'cursos', component: CursosComponent, pathMatch: 'full' },
   { path: 'eventos', component: EventosComponent, pathMatch: 'full' },
+  { path: 'profile', component: ProfileComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
