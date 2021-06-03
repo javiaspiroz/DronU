@@ -1,1 +1,38 @@
 <app-imagen-dron></app-imagen-dron>
+
+<div class="container-sol">
+    <h5>Independiente</h5>
+    <div class="row justify-content-center ">
+        <ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+            <ng-template ngbSlide *ngFor="let img of images; index as i">
+                <div class="carousel-caption">
+                </div>
+                <div class="picsum-img-wrapper">
+                    <img class="carouselImg" [src]="img.imagenes" alt="Imagen de dron del carrusel">
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>{{img.titulo}}</h4>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>30€/h</h4>
+                    </div>
+                </div>
+                <form>
+                    <p class="clasificacion">
+                        <input id="radio1" type="radio" name="estrellas" value="5">
+                        <label for="radio1">★</label>
+                        <input id="radio2" type="radio" name="estrellas" value="4">
+                        <label for="radio2">★</label>
+                        <input id="radio3" type="radio" name="estrellas" value="3">
+                        <label for="radio3">★</label>
+                        <input id="radio4" type="radio" name="estrellas" value="2">
+                        <label for="radio4">★</label>
+                        <input id="radio5" type="radio" name="estrellas" value="1">
+                        <label for="radio5">★</label>
+                    </p>
+                </form>
+            </ng-template>
+        </ngb-carousel>
+    </div>
+</div>

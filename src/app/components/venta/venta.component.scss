@@ -1,0 +1,90 @@
+h4 {
+    text-align: center;
+    // padding: 1rem;
+    padding-top: 3rem;
+}
+
+.tool-image {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 45px;
+    justify-content: center;
+}
+
+h5 {
+    text-align: left;
+    padding-top: 3rem;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    padding: 2rem;
+}
+
+.card2 {
+    border-color: rgb(32, 25, 25);
+    height: auto;
+    width: 26rem;
+    border-radius: 35px;
+    border: 40px;
+    border-width: .1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform .4s;
+    border: 2px solid black;
+}
+
+label {
+    color: grey;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.clasificacion {
+    direction: rtl;
+    /* right to left */
+    unicode-bidi: bidi-override;
+    /* bidi de bidireccional */
+    font-size: 1.5em;
+}
+
+label:hover,
+label:hover~label {
+    color: orange;
+}
+
+input[type="radio"]:checked~label {
+    color: orange;
+}
+
+.carouselImg {
+    height: 50vh;
+    width: 50vw;
+    justify-content: center;
+}
+
+.container-sol2 {
+    height: 50vh;
+    width: 50vw;
+    padding: 2rem;
+    margin-top: 1rem;
+    justify-content: center;
+    // border: 2px solid black;
+}
+
+.container-sol {
+    padding: 4rem;
+    margin-top: 1rem;
+    padding-bottom: 10rem;
+    justify-content: center;
+}
+
+.carousel-item {
+    justify-content: center;
+}

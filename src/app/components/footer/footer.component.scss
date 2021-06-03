@@ -4,14 +4,13 @@ footer {
     color: white;
     font-family: 'Lucida Console', Monospace;
     text-align: center;
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
-a {
-    color: white;
-}
-
-.mifooter {
+.container {
     padding: 1rem;
-    display: flex;
     justify-content: space-evenly;
 }

@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
@@ -20,6 +19,9 @@ import { MdbModule } from 'mdb-angular-ui-kit';
 import { GridAllModule } from '@syncfusion/ej2-angular-grids';
 import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { CursosComponent } from './components/cursos/cursos.component';
+import { EventosComponent } from './components/eventos/eventos.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -34,10 +36,13 @@ import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
     VentaComponent,
     ImagenDronComponent,
     CarritoComponent,
+    CursosComponent,
+    EventosComponent,
     ProfileComponent,
   ],
   imports: [
     BrowserModule,
+    SwiperModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
