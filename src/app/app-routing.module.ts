@@ -6,8 +6,7 @@ import { PerfilComponent } from './components/perfil/perfil.component';
 import { VentaComponent } from './components/venta/venta.component';
 import { AlquilerComponent } from './components/alquiler/alquiler.component';
 import { CursosComponent } from './components/cursos/cursos.component';
-import { EventosComponent } from './eventos/eventos.component';
-
+import { EventosComponent } from './components/eventos/eventos.component';
 import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [

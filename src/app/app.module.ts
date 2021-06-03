@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
@@ -18,12 +17,9 @@ import { ImagenDronComponent } from './components/imagen-dron/imagen-dron.compon
 import { CarritoComponent } from './components/carrito/carrito.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { MdbModule } from 'mdb-angular-ui-kit';
-
-import { SwiperModule } from 'swiper/angular';
 import { CursosComponent } from './components/cursos/cursos.component';
-import { EventosComponent } from './eventos/eventos.component';
-
-
+import { EventosComponent } from './components/eventos/eventos.component';
+import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -39,7 +35,6 @@ import { EventosComponent } from './eventos/eventos.component';
     VentaComponent,
     ImagenDronComponent,
     CarritoComponent,
-
     CursosComponent,
     EventosComponent,
     ProfileComponent,
