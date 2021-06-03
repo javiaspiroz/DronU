@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgbAlert } from '@ng-bootstrap/ng-bootstrap';
+import {Subject} from 'rxjs';
+import {debounceTime} from 'rxjs/operators';
 
 @Component({
   selector: 'app-profile',
@@ -34,6 +37,40 @@ export class ProfileComponent implements OnInit {
     { 'order': 46598, 'date': '2020/12/14', 'type': 'Alquiler', 'address': 'No aplicable', 'price': 850 },
     { 'order': 79845, 'date': '2020/05/14', 'type': 'Evento', 'address': 'No aplicable', 'price': 0 },]
 
+    this._success.subscribe(message => this.successMessage = message);
+    this._success.pipe(debounceTime(5000)).subscribe(() => {
+      if (this.selfClosingAlert) {
+        this.selfClosingAlert.close();
+      }
+    });
+
+    this._successPass.subscribe(messagePass => this.successMessagePass = messagePass);
+    this._successPass.pipe(debounceTime(5000)).subscribe(() => {
+      if (this.selfClosingAlertPass) {
+        this.selfClosingAlertPass.close();
+      }
+    });
+
+  }
+
+  @ViewChild('selfClosingAlert', {static: false}) selfClosingAlert: NgbAlert;
+  @ViewChild('selfClosingAlertPass', {static: false}) selfClosingAlertPass: NgbAlert;
+
+  staticAlertClosed = false;
+  successMessage = '';
+
+  staticAlertClosedPass = false;
+  successMessagePass = '';
+
+  private _success = new Subject<string>();
+  private _successPass = new Subject<string>();
+
+  public changeSuccessMessage() { 
+    this._success.next(`${new Date()} - Message successfully changed.`); 
+  }
+
+  public changeSuccessMessagePass() { 
+    this._successPass.next(`${new Date()} - Message successfully changed.`); 
   }
 
 }

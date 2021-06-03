@@ -37,9 +37,21 @@ img {
 .datosPerfil{
   margin-top: 2%;
 }
+
+ngb-alert{
+  border-radius: 41px;
+}
+
+
 // #botMod{
 //   margin-left: 30%;
 // }
 // #botPass{
 //   margin-left: 50%;
 // }
+
+@media only screen and (max-width: 750px) {
+  .noTabla{
+    display: none;
+  }
+}
