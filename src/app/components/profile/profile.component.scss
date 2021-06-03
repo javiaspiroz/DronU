@@ -3,7 +3,7 @@ img {
   height: 10rem;
   padding: 20px;
 }
-.myInputs {
+/*.myInputs {
   width: 100%;
   align-content: center;
   align-items: center;
@@ -21,4 +21,37 @@ img {
   justify-content: space-between;
   padding: 0 30%;
   margin: 20px 0;
+}*/
+.pedidos{
+  margin-bottom: 3%;
+  h2{
+    font: italic normal bold 32px Segoe UI;
+    margin-bottom: 2%;
+  }
+}
+.divBoton{
+  margin-top: 2%;
+  text-align: center;
+}
+
+.datosPerfil{
+  margin-top: 2%;
+}
+
+ngb-alert{
+  border-radius: 41px;
+}
+
+
+// #botMod{
+//   margin-left: 30%;
+// }
+// #botPass{
+//   margin-left: 50%;
+// }
+
+@media only screen and (max-width: 750px) {
+  .noTabla{
+    display: none;
+  }
 }

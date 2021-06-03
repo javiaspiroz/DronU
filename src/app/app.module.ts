@@ -10,13 +10,15 @@ import { HomeComponent } from './components/home/home.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProductoComponent } from './components/producto/producto.component';
-import { PerfilComponent } from './components/perfil/perfil.component';
 import { AlquilerComponent } from './components/alquiler/alquiler.component';
 import { VentaComponent } from './components/venta/venta.component';
 import { ImagenDronComponent } from './components/imagen-dron/imagen-dron.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { MdbModule } from 'mdb-angular-ui-kit';
+import { GridAllModule } from '@syncfusion/ej2-angular-grids';
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { EventosComponent } from './components/eventos/eventos.component';
 import { SwiperModule } from 'swiper/angular';
@@ -30,7 +32,6 @@ import { SwiperModule } from 'swiper/angular';
     RegisterComponent,
     LoginComponent,
     ProductoComponent,
-    PerfilComponent,
     AlquilerComponent,
     VentaComponent,
     ImagenDronComponent,
@@ -48,6 +49,9 @@ import { SwiperModule } from 'swiper/angular';
     ReactiveFormsModule,
     AppRoutingModule,
     MdbModule,
+    GridAllModule,
+    ToolbarModule,
+    CheckBoxModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
