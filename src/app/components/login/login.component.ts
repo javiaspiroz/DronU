@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 import { RegisterComponent } from 'src/app/components/register/register.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,11 +15,15 @@ export class LoginComponent implements OnInit {
 
   constructor(
     // private loginService: LoginService,
+    private router: Router,
     private modalService: NgbModal // private commonsService: CommonsService, // private authService: AuthService
   ) {}
 
   ngOnInit(): void {}
 
+  sendLogin() {
+    this.router.navigate(['profile']);
+  }
   showRegister() {
     this.child.showPopupRegister();
   }

@@ -16,6 +16,8 @@ import { AlquilerComponent } from './components/alquiler/alquiler.component';
 import { VentaComponent } from './components/venta/venta.component';
 import { ImagenDronComponent } from './components/imagen-dron/imagen-dron.component';
 import { CarritoComponent } from './components/carrito/carrito.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { MdbModule } from 'mdb-angular-ui-kit';
 
 import { SwiperModule } from 'swiper/angular';
 import { CursosComponent } from './components/cursos/cursos.component';
@@ -37,8 +39,10 @@ import { EventosComponent } from './eventos/eventos.component';
     VentaComponent,
     ImagenDronComponent,
     CarritoComponent,
+
     CursosComponent,
     EventosComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -48,6 +52,7 @@ import { EventosComponent } from './eventos/eventos.component';
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
+    MdbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
