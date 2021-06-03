@@ -1,10 +1,19 @@
 <nav id="hamnav">
-    <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"><img class="logo" src="../../../assets/images/logo.png" /></a>
-    <label for="hamburger">&#9776;</label>
-    <input type="checkbox" id="hamburger" />
-    <div class="mainMenu" id="hamitems">
-        <div class="itemVacio"></div>
-        <a routerLink="alquiler" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Alquiler</a
+  <a
+    routerLink=""
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{ exact: true }"
+    ><img class="logo" src="../../../assets/images/logo.png"
+  /></a>
+  <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger" />
+  <div class="mainMenu" id="hamitems">
+    <div class="itemVacio"></div>
+    <a
+      routerLink="alquiler"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Alquiler</a
     >
     <a
       routerLink="venta"
@@ -32,9 +41,8 @@
       [routerLinkActiveOptions]="{ exact: true }"
       ><img class="cart" src="../../../assets/images/cart.png"
     /></a>
-        <a (click)="showCarrito()" class="cartText">Carrito</a>
-        <a routerLink="" (click)="showLogin()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Login</a
-    >
+    <a (click)="showCarrito()" class="cartText">Carrito</a>
+    <a routerLink="" (click)="showLogin()">Login</a>
   </div>
 </nav>
 <app-login></app-login>

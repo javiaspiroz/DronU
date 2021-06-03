@@ -11,6 +11,13 @@ nav {
   // background-color: black;
   // opacity: 0.5;
 
+  .active {
+    // background-color: rgba(84, 90, 109, 0.712) !important;
+    // border-radius: 5px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
   label,
   #hamburger {
     display: none;
