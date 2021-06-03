@@ -43,11 +43,11 @@
   <ejs-grid class="sortingenabled" [dataSource]="data" allowPaging="true" allowSorting="true" 
     [enableHover]="false" [allowSelection]="true" [toolbar]="toolbar">
     <e-columns>
-      <e-column field="OrderID" headerText="Nº de Pedido" width="20"></e-column>
-      <e-column field="CustomerName" headerText="Fecha" width="70" textAlign="Center"></e-column>
-      <e-column field="OrderDate" headerText="Tipo" width="70" textAlign="Center"></e-column>
-      <e-column field="Freight" headerText="Dirreción de Envío" width="70" textAlign="Center"></e-column>
-      <e-column field="Freight" headerText="Precio" width="70" textAlign="Center"></e-column>
+      <e-column field="order" headerText="Nº de Pedido" width="50"></e-column>
+      <e-column field="date" headerText="Fecha" width="70" textAlign="Center"></e-column>
+      <e-column field="type" headerText="Tipo" width="70" textAlign="Center"></e-column>
+      <e-column field="address" headerText="Dirección de Envío" width="70" textAlign="Center"></e-column>
+      <e-column field="price" headerText="Precio (€)" width="70" textAlign="Center"></e-column>
     </e-columns>
   </ejs-grid>
 </div>
