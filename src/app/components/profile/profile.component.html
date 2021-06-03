@@ -1,9 +1,6 @@
 <app-imagen-dron></app-imagen-dron>
 <div class="flex-container">
-  <img
-    class="cardImg rounded-circle"
-    src="../../../assets/images/javier-aspiroz.jpg"
-  />
+  <img class="cardImg rounded-circle" src="../../../assets/images/javier-aspiroz.jpg" />
   <div class="myInputs">
     <div class="flex-container">
       <div class="form-outline border">
@@ -40,15 +37,18 @@
   <button class="button-chulo" type="submit">Cambiar contraseña</button>
 </div>
 
-
+<div class="container pedidos">
 <h2>Tus pedidos</h2>
 <div class="control-section">
-  <ejs-grid class="sortingenabled" [dataSource]="data" allowPaging="true" allowSorting="true" [enableHover]="false" [allowSelection]="true" [toolbar]="toolbar">
+  <ejs-grid class="sortingenabled" [dataSource]="data" allowPaging="true" allowSorting="true" 
+    [enableHover]="false" [allowSelection]="true" [toolbar]="toolbar">
     <e-columns>
-      <e-column field="OrderID" headerText="ID Usuario" width="20"></e-column>
-      <e-column field="CustomerName" headerText="Nombre" width="70" textAlign="Center"></e-column>
-      <e-column field="OrderDate" headerText="email" width="70" textAlign="Center"></e-column>
-      <e-column field="Freight" headerText="Fecha de registro" width="70" textAlign="Center"></e-column>
+      <e-column field="OrderID" headerText="Nº de Pedido" width="20"></e-column>
+      <e-column field="CustomerName" headerText="Fecha" width="70" textAlign="Center"></e-column>
+      <e-column field="OrderDate" headerText="Tipo" width="70" textAlign="Center"></e-column>
+      <e-column field="Freight" headerText="Dirreción de Envío" width="70" textAlign="Center"></e-column>
+      <e-column field="Freight" headerText="Precio" width="70" textAlign="Center"></e-column>
     </e-columns>
   </ejs-grid>
+</div>
 </div>

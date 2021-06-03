@@ -27,6 +27,7 @@
     "@syncfusion/ej2-angular-buttons": "^19.1.63",
     "@syncfusion/ej2-angular-grids": "^19.1.66",
     "@syncfusion/ej2-angular-navigations": "^19.1.66",
+    "@syncfusion/ej2-navigations": "^19.1.66",
     "bootstrap": "^4.5.0",
     "bootstrap-select": "^1.13.18",
     "mdb-angular-ui-kit": "^1.0.0-beta5",
