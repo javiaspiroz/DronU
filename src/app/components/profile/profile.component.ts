@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ToolbarService, GridComponent } from '@syncfusion/ej2-angular-grids'
 
 @Component({
   selector: 'app-profile',
