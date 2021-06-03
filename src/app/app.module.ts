@@ -19,6 +19,12 @@ import { CarritoComponent } from './components/carrito/carrito.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { MdbModule } from 'mdb-angular-ui-kit';
 
+import { SwiperModule } from 'swiper/angular';
+import { CursosComponent } from './components/cursos/cursos.component';
+import { EventosComponent } from './eventos/eventos.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,10 +39,14 @@ import { MdbModule } from 'mdb-angular-ui-kit';
     VentaComponent,
     ImagenDronComponent,
     CarritoComponent,
+
+    CursosComponent,
+    EventosComponent,
     ProfileComponent,
   ],
   imports: [
     BrowserModule,
+    SwiperModule,
     AppRoutingModule,
     NgbModule,
     FormsModule,
