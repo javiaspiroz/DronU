@@ -6,14 +6,16 @@ h4 {
 
 .tool-image {
     width: 50%;
-    padding: 1rem;
+    // padding: 1rem;
     border-radius: 45px;
     justify-content: center;
 }
 
 h5 {
     text-align: left;
-    padding-top: 3rem;
+    // padding-top: 1rem;
+    font-size: 2em;
+    padding-bottom: 1rem;
 }
 
 .top {
@@ -22,20 +24,6 @@ h5 {
     margin-top: 1rem;
     margin-bottom: 10rem;
     padding: 2rem;
-}
-
-.card2 {
-    border-color: rgb(32, 25, 25);
-    height: auto;
-    width: 26rem;
-    border-radius: 35px;
-    border: 40px;
-    border-width: .1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform .4s;
-    border: 2px solid black;
 }
 
 label {
@@ -51,7 +39,9 @@ input[type="radio"] {
     /* right to left */
     unicode-bidi: bidi-override;
     /* bidi de bidireccional */
-    font-size: 1.5em;
+    font-size: 3em;
+    // justify-content: left;
+    padding-left: 24rem;
 }
 
 label:hover,
@@ -64,8 +54,8 @@ input[type="radio"]:checked~label {
 }
 
 .carouselImg {
-    height: 50vh;
-    width: 50vw;
+    height: 40vh;
+    width: 100vh;
     justify-content: center;
 }
 
@@ -79,9 +69,9 @@ input[type="radio"]:checked~label {
 }
 
 .container-sol {
-    padding: 4rem;
+    // padding: 2rem;
     margin-top: 1rem;
-    padding-bottom: 10rem;
+    padding-bottom: 2rem;
     justify-content: center;
 }
 
