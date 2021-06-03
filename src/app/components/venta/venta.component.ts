@@ -17,10 +17,22 @@ export class VentaComponent implements OnInit {
 
   images = [
 {'imagenes':"../../assets/images/hexacoptero1.jpg",
-'titulo':"hola1"},
-{'imagenes':"../../../assets/images/walkera.jpg", 'titulo':"hola2"},
+'titulo':"Yuneec Typoon H3", 'precio':"2.394,00€"},
+{'imagenes':"../../../assets/images/walkera.jpg", 'titulo':"Walkera TALI H500", 'precio':"516,49€"},
 ]
-// title = ["hola1", "hola2"]
+
+images2 = [
+  {'imagenes':"../../assets/images/81U7zKn3htL._AC_SL1500_.jpg",
+  'titulo':"Yuneec Typoon H3", 'precio':"2.394,00€"},
+  {'imagenes':"../../../assets/images/cuatricoptero2.jpg", 'titulo':"Walkera TALI H500", 'precio':"516,49€"},
+  ]
+
+  images3 = [
+    {'imagenes':"../../assets/images/minidrone1.jpg",
+    'titulo':"Yuneec Typoon H3", 'precio':"2.394,00€"},
+    {'imagenes':"../../../assets/images/minidrone2.jpg", 'titulo':"Walkera TALI H500", 'precio':"516,49€"},
+    ]
+
 
   paused = false;
   unpauseOnArrow = false;
