@@ -7,21 +7,12 @@
             <ng-template ngbSlide *ngFor="let img of images; index as i">
                 <div class="carousel-caption">
                 </div>
-                <!-- <div class="carousel-caption">
-            <a class="linkFlecha" routerLink="" fragment="quienesSomos">
-                <h3>Quiénes somos</h3>
-                <svg id="icon_navigation_expand_more_24px" data-name="icon/navigation/expand_more_24px" xmlns="http://www.w3.org/2000/svg" width="38" height="32" viewBox="0 0 38 32">
-                <rect id="Boundary" width="32" height="32" fill="none"/>
-                <path id="_Color" data-name=" ↳Color" d="M28.24,0,16,12.2,3.76,0,0,3.755,16,19.733,32,3.755Z" transform="translate(6 8.6)" fill="#fff"/>
-            </svg>
-            </a>
-        </div> -->
                 <div class="picsum-img-wrapper">
-                    <img class="carouselImg" [src]="img" alt="Imagen de dron del carrusel">
+                    <img class="carouselImg" [src]="img.imagenes" alt="Imagen de dron del carrusel">
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <h4>Mavic Air 2</h4>
+                        <h4>{{img.titulo}}</h4>
                     </div>
                     <div class="col-md-4">
                         <h4>30€/h</h4>

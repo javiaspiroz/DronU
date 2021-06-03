@@ -14,9 +14,13 @@ export class VentaComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
   images = [
-"../../assets/images/hexacoptero1.jpg", "../../../assets/images/walkera.jpg"
+{'imagenes':"../../assets/images/hexacoptero1.jpg",
+'titulo':"hola1"},
+{'imagenes':"../../../assets/images/walkera.jpg", 'titulo':"hola2"},
 ]
+// title = ["hola1", "hola2"]
 
   paused = false;
   unpauseOnArrow = false;
