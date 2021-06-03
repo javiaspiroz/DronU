@@ -34,12 +34,22 @@ img {
   text-align: center;
 }
 
+button{
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
 .datosPerfil{
   margin-top: 2%;
 }
 
 ngb-alert{
   border-radius: 41px;
+}
+
+label{
+  font: italic normal bold 1rem Segoe UI;
+  margin-top: 1%;
 }
 
 
@@ -53,5 +63,14 @@ ngb-alert{
 @media only screen and (max-width: 750px) {
   .noTabla{
     display: none;
+  }
+  h2{
+    margin-top: 2%;
+  }
+  .imgPerfil{
+    text-align: center;
+  }
+  .divPass{
+    margin-top: 3%;
   }
 }
