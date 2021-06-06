@@ -1,137 +1,259 @@
 <app-imagen-dron></app-imagen-dron>
 <div class="container">
-    <div class="container-sol">
-        <h5>Hexacóptero</h5>
-        <div class="row justify-content-center ">
-            <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
-                (slide)="onSlide($event)">
-                <ng-template ngbSlide *ngFor="let img of images; index as i">
-                    <div class="carousel-caption">
-                    </div>
-                    <div class="picsum-img-wrapper">
-                        <a routerLink="/producto" routerLinkActive="active" style="text-decoration: none">
-                            <img class="carouselImg" [src]="img.imagenes" alt="Imagen de dron del carrusel">
-                        </a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>{{img.titulo}}</h4>
-                        </div>
-                        <div class="col-md-6">
-                            <h4>{{img.precio}}</h4>
-                        </div>
-                    </div>
-                    <form>
-                        <p class="clasificacion">
-                            <input id="radio1" type="radio" name="estrellas" value="5">
-                            <label for="radio1">★</label>
-                            <input id="radio2" type="radio" name="estrellas" value="4">
-                            <label for="radio2">★</label>
-                            <input id="radio3" type="radio" name="estrellas" value="3">
-                            <label for="radio3">★</label>
-                            <input id="radio4" type="radio" name="estrellas" value="2">
-                            <label for="radio4">★</label>
-                            <input id="radio5" type="radio" name="estrellas" value="1">
-                            <label for="radio5">★</label>
-                        </p>
-                    </form>
-                </ng-template>
-            </ngb-carousel>
-        </div>
-    </div>
+    <h3>Hexacóptero</h3>
 
-    <swiper [slidesPerView]="3" [spaceBetween]="30" [slidesPerGroup]="3" [loop]="true" [loopFillGroupWithBlank]="true"
-        [pagination]="{
-      clickable: true
-    }" [navigation]="true" class="mySwiper">
-        <ng-template swiperSlide>Slide 1</ng-template>
-        <ng-template swiperSlide>Slide 2</ng-template>
-        <ng-template swiperSlide>Slide 3</ng-template>
-        <ng-template swiperSlide>Slide 4</ng-template>
-        <ng-template swiperSlide>Slide 5</ng-template>
-        <ng-template swiperSlide>Slide 6</ng-template>
-        <ng-template swiperSlide>Slide 7</ng-template>
-        <ng-template swiperSlide>Slide 8</ng-template>
-        <ng-template swiperSlide>Slide 9</ng-template>
+    <swiper [slidesPerView]="2" [spaceBetween]="30" [slidesPerGroup]="2" [loop]="true" [loopFillGroupWithBlank]="true"
+        [pagination]="{ clickable: true }" [navigation]="true" class="mySwiper">
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../assets/images/hexacoptero1.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>Yuneec Typoon H3</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>2.394,00€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../../assets/images/walkera.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>Walkera TALI H500</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>516,49€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../assets/images/tarot680.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>Tarot 680 Pro</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>143,90€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../../assets/images/H8caa760834754bed90830749c2ec84bbX.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>GAIA 100 Long Range</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>7.100,99€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
     </swiper>
 
-    <div class="container-sol">
-        <h5>Cuatricóptero</h5>
-        <div class="row justify-content-center ">
-            <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
-                (slide)="onSlide($event)">
-                <ng-template ngbSlide *ngFor="let img of images2; index as i">
-                    <div class="carousel-caption">
-                    </div>
-                    <div class="picsum-img-wrapper">
-                        <a routerLink="/producto" routerLinkActive="active" style="text-decoration: none">
-                            <img class="carouselImg" [src]="img.imagenes" alt="Imagen de dron del carrusel">
-                        </a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>{{img.titulo}}</h4>
+    <h3>Cuatricóptero</h3>
+    <swiper [slidesPerView]="2" [spaceBetween]="30" [slidesPerGroup]="2" [loop]="true" [loopFillGroupWithBlank]="true"
+        [pagination]="{ clickable: true }" [navigation]="true" class="mySwiper">
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../assets/images/81U7zKn3htL._AC_SL1500_.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>Mavic Air 2</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>850€</h5>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h4>{{img.precio}}</h4>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
                         </div>
                     </div>
-                    <form>
-                        <p class="clasificacion">
-                            <input id="radio1" type="radio" name="estrellas" value="5">
-                            <label for="radio1">★</label>
-                            <input id="radio2" type="radio" name="estrellas" value="4">
-                            <label for="radio2">★</label>
-                            <input id="radio3" type="radio" name="estrellas" value="3">
-                            <label for="radio3">★</label>
-                            <input id="radio4" type="radio" name="estrellas" value="2">
-                            <label for="radio4">★</label>
-                            <input id="radio5" type="radio" name="estrellas" value="1">
-                            <label for="radio5">★</label>
-                        </p>
-                    </form>
-                </ng-template>
-            </ngb-carousel>
-        </div>
-    </div>
+                </a>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../../assets/images/parrot_anafi_packshot_open_04_722x450px.png" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>Parrot Anafi</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>700€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../assets/images/51LlJ+ZSn6L._AC_SY355_.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>SJAPEX HD WiFi</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>300,00€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../../assets/images/s1-img-2103a7274a03d031f129b9cd360c2ee3.png" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>DJI Phantom 4 Advanced</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>1.300,49€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+    </swiper>
 
-    <div class="container-sol">
-        <h5>Minidrone</h5>
-        <div class="row justify-content-center ">
-            <ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
-                (slide)="onSlide($event)">
-                <ng-template ngbSlide *ngFor="let img of images3; index as i">
-                    <div class="carousel-caption">
-                    </div>
-                    <div class="picsum-img-wrapper">
-                        <a routerLink="/producto" routerLinkActive="active" style="text-decoration: none">
-                            <img class="carouselImg" [src]="img.imagenes" alt="Imagen de dron del carrusel">
-                        </a>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>{{img.titulo}}</h4>
+    <h3>Minidrone</h3>
+    <swiper [slidesPerView]="2" [spaceBetween]="30" [slidesPerGroup]="2" [loop]="true" [loopFillGroupWithBlank]="true"
+        [pagination]="{ clickable: true }" [navigation]="true" class="mySwiper">
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../assets/images/minidrone1.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>Parrot Mambo Fly</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>50,99€</h5>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <h4>{{img.precio}}</h4>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
                         </div>
                     </div>
-                    <form>
-                        <p class="clasificacion">
-                            <input id="radio1" type="radio" name="estrellas" value="5">
-                            <label for="radio1">★</label>
-                            <input id="radio2" type="radio" name="estrellas" value="4">
-                            <label for="radio2">★</label>
-                            <input id="radio3" type="radio" name="estrellas" value="3">
-                            <label for="radio3">★</label>
-                            <input id="radio4" type="radio" name="estrellas" value="2">
-                            <label for="radio4">★</label>
-                            <input id="radio5" type="radio" name="estrellas" value="1">
-                            <label for="radio5">★</label>
-                        </p>
-                    </form>
-                </ng-template>
-            </ngb-carousel>
-        </div>
-    </div>
+                </a>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../assets/images/minidrone2.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>Xiaomi Mi Drone Mini</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>73.50€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../assets/images/51763xo--RL._AC_SX500_SY375_.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>ATOYX Mini Drone</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>28,99€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+        <ng-template swiperSlide>
+            <div class="col-md-6 top">
+                <a routerLink="../producto">
+                    <div class="card2">
+                        <img class="tool-image" src="../../../assets/images/39d6eaceba3616d1460ec643f4654672@large.jpg" alt="">
+                        <div class="row">
+                            <div class="col-md-8 tituloCur">
+                                <h4>Mavic Mini</h4>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>400€</h5>
+                            </div>
+                        </div>
+                        <div class="ratingDiv">
+                            <img class="rating" src="../../../assets/images/stars.PNG" alt="rating">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </ng-template>
+    </swiper>
+    <br><br>
 </div>
