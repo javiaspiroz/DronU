@@ -1,3 +1,21 @@
+<!-- <swiper [spaceBetween]="30" [loop]="true" [loopFillGroupWithBlank]="true" [pagination]="{ clickable: true }"
+  [navigation]="true" class="mySwiper">
+  <ng-template swiperSlide>
+    <img class="carouselImg" src="../../../assets/images/Drones1.jpg" alt="Imagen de dron del carrusel" />
+  </ng-template>
+  <ng-template swiperSlide>
+    <img class="carouselImg" src="../../../assets/images/iewek-gnos-ZlkRrzJl20Q-unsplash.jpg"
+      alt="Imagen de dron del carrusel" />
+  </ng-template>
+  <ng-template swiperSlide>
+    <img class="carouselImg" src="../../../assets/images/jaromir-kavan-e3hH6_pSk1g-unsplash.jpg"
+      alt="Imagen de dron del carrusel" />
+  </ng-template>
+  <ng-template swiperSlide>
+    <img class="carouselImg" src="../../../assets/images/Drones4.png" alt="Imagen de dron del carrusel" />
+  </ng-template>
+</swiper> -->
+
 <ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
   (slide)="onSlide($event)">
   <ng-template ngbSlide *ngFor="let img of images; index as i">
