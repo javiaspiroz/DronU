@@ -3,7 +3,8 @@
     <div class="container-sol">
         <h5>Hexacóptero</h5>
         <div class="row justify-content-center ">
-            <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+            <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                (slide)="onSlide($event)">
                 <ng-template ngbSlide *ngFor="let img of images; index as i">
                     <div class="carousel-caption">
                     </div>
@@ -39,10 +40,26 @@
         </div>
     </div>
 
+    <swiper [slidesPerView]="3" [spaceBetween]="30" [slidesPerGroup]="3" [loop]="true" [loopFillGroupWithBlank]="true"
+        [pagination]="{
+      clickable: true
+    }" [navigation]="true" class="mySwiper">
+        <ng-template swiperSlide>Slide 1</ng-template>
+        <ng-template swiperSlide>Slide 2</ng-template>
+        <ng-template swiperSlide>Slide 3</ng-template>
+        <ng-template swiperSlide>Slide 4</ng-template>
+        <ng-template swiperSlide>Slide 5</ng-template>
+        <ng-template swiperSlide>Slide 6</ng-template>
+        <ng-template swiperSlide>Slide 7</ng-template>
+        <ng-template swiperSlide>Slide 8</ng-template>
+        <ng-template swiperSlide>Slide 9</ng-template>
+    </swiper>
+
     <div class="container-sol">
         <h5>Cuatricóptero</h5>
         <div class="row justify-content-center ">
-            <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+            <ngb-carousel #carousel [interval]="3000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                (slide)="onSlide($event)">
                 <ng-template ngbSlide *ngFor="let img of images2; index as i">
                     <div class="carousel-caption">
                     </div>
@@ -81,7 +98,8 @@
     <div class="container-sol">
         <h5>Minidrone</h5>
         <div class="row justify-content-center ">
-            <ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
+            <ngb-carousel #carousel [interval]="5000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus"
+                (slide)="onSlide($event)">
                 <ng-template ngbSlide *ngFor="let img of images3; index as i">
                     <div class="carousel-caption">
                     </div>
