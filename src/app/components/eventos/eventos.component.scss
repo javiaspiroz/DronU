@@ -6,80 +6,76 @@
     padding: 2rem;
 }
 
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 .tool-image {
     width: 100%;
     padding: 1.5rem;
     border-radius: 45px;
+    height: 60%;
+}
+
+h3{
+    font: normal normal normal 58px Agency FB;
+    margin-top: 3%;
+}
+
+.ratingDiv{
+    text-align: right;
+}
+
+.rating{
+    width: 40%;
+    margin-top: -10%;
+}
+
+.col-md-4{
+    text-align: right;
+    padding-right: 10%;
 }
 
 h4 {
-    text-align: auto;
+    font: normal normal normal 2rem Agency FB;
+}
+
+.tituloCur{
+    text-align: left;
+    padding-right: 120px;
 }
 
 h5 {
-    text-align: left;
-    padding-top: 3rem;
+    text-align: right;
+    font: normal normal normal 2rem Agency FB;
+    
 }
 
 .top2 {
     display: flex;
     flex-direction: column;
-    // text-align: left;
     padding-right: 6rem;
 }
 
 .card2 {
     border-color: rgb(32, 25, 25);
-    height: auto;
+    height: 25rem;
     width: 26rem;
     border-radius: 35px;
-    // border: 40px;
-    // border-width: .1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    // transition: transform .20s;
     border: 1px solid black;
 }
 
-label {
-    color: grey;
-}
-
-input[type="radio"] {
-    display: none;
-}
-
-.clasificacion {
-    direction: rtl;
-    /* right to left */
-    unicode-bidi: bidi-override;
-    /* bidi de bidireccional */
-    font-size: 2.5em;
-    padding-left: 12rem;
-}
-
-label:hover,
-label:hover~label {
-    color: orange;
-}
-
-input[type="radio"]:checked~label {
-    color: orange;
+a{
+    text-decoration: none;
+    color: black;
 }
 
 @media all and (max-width: 900px) {
-    .container {
-        display: flex;
-        flex-flow: column;
-        width: 100%;
-    }
-    .h4 {
-        width: 100%;
-    }
-    .image {
-        width: 50%;
-        padding: 1%;
-        margin: 1% auto;
+    .card2{
+        width: 22rem;
     }
 }
